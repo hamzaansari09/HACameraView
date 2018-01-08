@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-public class HACameraComponent: NSObject {
+public class HACameraComponent {
     private(set) public var videoController: HACameraViewController = HACameraViewController()
     
     enum HACameraComponentState {
@@ -46,7 +46,7 @@ public class HACameraComponent: NSObject {
         type: CameraType) {
         self.cameraPosition = cameraPosition
         self.cameraType = type
-        super.init()
+
         viewController.addChildViewController(self.videoController)
         viewController.view.addSubview(self.videoController.view)
         self.videoController.didMove(toParentViewController: viewController)

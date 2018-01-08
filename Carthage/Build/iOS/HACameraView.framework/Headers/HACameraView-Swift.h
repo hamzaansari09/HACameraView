@@ -172,7 +172,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # define SWIFT_DEPRECATED_OBJC(Msg) SWIFT_DEPRECATED_MSG(Msg)
 #endif
 #if __has_feature(modules)
-@import ObjectiveC;
 @import UIKit;
 @import AVFoundation;
 #endif
@@ -186,12 +185,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Wnullability"
 
 SWIFT_MODULE_NAMESPACE_PUSH("HACameraView")
-
-SWIFT_CLASS("_TtC12HACameraView17HACameraComponent")
-@interface HACameraComponent : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-@end
-
 @class NSBundle;
 @class NSCoder;
 
