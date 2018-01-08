@@ -1,0 +1,11 @@
+framework module HACameraView {
+  umbrella header "HACameraView.h"
+
+  export *
+  module * { export * }
+}
+
+module HACameraView.Swift {
+    header "HACameraView-Swift.h"
+    requires objc
+}
