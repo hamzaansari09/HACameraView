@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VlY-n7-xgO">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="3FO-0K-WSC">
+            <objects>
+                <viewController id="VlY-n7-xgO" customClass="ViewController" customModule="iOS_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0Zg-db-k70"/>
+                        <viewControllerLayoutGuide type="bottom" id="eZP-6Q-unT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Oez-Fi-rGd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aBA-QT-lGq">
+                                <rect key="frame" x="136.5" y="611" width="101" height="30"/>
+                                <state key="normal" title="Capture Image">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="captureImageTapped:" destination="VlY-n7-xgO" eventType="touchUpInside" id="PQ7-JB-I5c"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="re3-MH-Mff">
+                                <rect key="frame" x="176" y="303.5" width="23" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aBA-QT-lGq" firstAttribute="centerX" secondItem="Oez-Fi-rGd" secondAttribute="centerX" id="Ebe-pW-5Pm"/>
+                            <constraint firstItem="re3-MH-Mff" firstAttribute="centerX" secondItem="Oez-Fi-rGd" secondAttribute="centerX" id="YUB-Af-Iq0"/>
+                            <constraint firstItem="eZP-6Q-unT" firstAttribute="top" secondItem="aBA-QT-lGq" secondAttribute="bottom" constant="26" id="bGC-DQ-SYQ"/>
+                            <constraint firstItem="re3-MH-Mff" firstAttribute="centerY" secondItem="Oez-Fi-rGd" secondAttribute="centerY" id="yVj-0d-5Oo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Z8w-18-xgd"/>
+                    </view>
+                    <connections>
+                        <outlet property="captureImage" destination="aBA-QT-lGq" id="HAm-rQ-P7k"/>
+                        <outlet property="countLabel" destination="re3-MH-Mff" id="1sx-FH-dbk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yBG-Tm-Avz" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
