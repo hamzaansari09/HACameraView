@@ -18,28 +18,17 @@ Pod::Spec.new do |s|
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   s.license      = { :type => "MIT", :file => "LICENSE" }
 
-
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   s.author             = { "Hamza Ansari" => "hamzaansari209@gmail.com" }
   # Or just: s.author    = "Hamza Ansari"
   # s.authors            = { "Hamza Ansari" => "hamzaansari209@gmail.com" }
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-
-  s.platform     = :ios
   s.platform     = :ios, "9.0"
 
-
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-
   s.source       = { :git => "https://github.com/hamzaansari09/HACameraView.git", :tag => "#{s.version}" }
 
-
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  s.source_files = "HACameraView/**/*.{swift}"
-
-  # s.public_header_files = "Classes/**/*.h"
-  s.resources = "HACameraView/**/*.{png,jpeg,jpg,storyboard,xib}"
-
-
+  s.source_files = "Source/**/*"
 end
