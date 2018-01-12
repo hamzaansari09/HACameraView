@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
 s.name = 'HACameraView'
-s.version = '1.1'
+s.version = '1.2'
 s.license = 'MIT'
 s.summary = "Take auto profile picture"
 s.homepage = "https://github.com/hamzaansari09/HACameraView"
