@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
   s.name         = "HACameraView"
-  s.version      = "1.0"
+  s.version      = "1.0.1"
   s.summary      = "Take auto profile picture"
   s.homepage     = "https://github.com/hamzaansari09/HACameraView"
  
